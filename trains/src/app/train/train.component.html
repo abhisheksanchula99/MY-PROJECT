@@ -1,0 +1,35 @@
+<div class="generic-container">
+    <div class="panel panel-default">
+      <div class="row">
+       <h2>List of Products</h2>
+      </div>
+      <div class="panel-heading"><span class="lead">List of Products</span>
+      </div>
+      <div class="tablecontainer">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>train_id</th>
+            <th>train_name</th>
+            <th>from</th>
+            <th> to</th>
+            <th>fare</th>
+            <th>Operations</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let trai of trains">
+            <td><span>{{trai.train_id}}</span></td>
+            <td><span>{{trai.train_name}}</span></td>
+            <td><span>{{trai.from}}</span></td>
+            <td><span>{{trai.to}}</span></td>
+            <td><span>{{trai.fare}}</span></td>
+            <th><i (click)="deleteResto(trai.train_id)">delete</i>
+              <a routerLink="/update/{{trai.train_id}}"><i>update</i> </a>
+              </th>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

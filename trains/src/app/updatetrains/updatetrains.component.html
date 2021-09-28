@@ -1,0 +1,26 @@
+<h3>Edit Restaurant Details</h3>
+<form [formGroup]="editResto" (ngSubmit)="collection()" >
+    <div class="form-group">
+        <label >Id</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="train_id">
+    </div>
+    <div class="form-group">
+        <label >Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="train_name">
+    </div>
+    <div class="form-group">
+        <label >Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="from">
+    </div>
+    <div class="form-group">
+        <label >Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="to">
+    </div>
+    <div class="form-group">
+        <label >Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="fare">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+    
+

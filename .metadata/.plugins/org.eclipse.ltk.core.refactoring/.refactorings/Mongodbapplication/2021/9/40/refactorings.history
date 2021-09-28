@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;smokeTest.java&apos; to &apos;mongodbapp/src/test/java/com.example.demo&apos;&#x0D;&#x0A;- Original project: &apos;Mongodbapplication&apos;&#x0D;&#x0A;- Destination element: &apos;mongodbapp/src/test/java/com.example.demo&apos;&#x0D;&#x0A;- Original element: &apos;com.example.demo.smokeTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=mongodbapp/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.example.demo" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.example.demo{smokeTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1632722167097" units="1" version="1.0"/>
+</session>

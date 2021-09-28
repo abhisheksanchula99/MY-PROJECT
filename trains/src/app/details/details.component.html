@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div id="custom-search-input">
+        <div class="input-grout col-md-12" style="text-align:center">
+          <input type="text" class="search-query form-control" placeholder="search with id" name="id" [(ngModel)]="id"/>
+          <span class="input-hroup-btn">
+            <button class="btn btn-danger" type="button" (click)="getbookbyid()">search
+              <span class=" glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>TRAIN NUMBER</th>
+    <th>QUANTITY</th>
+    <th>SOURCE STATION</th>
+    <th> DESTINATION STATION</th>
+    <th>CONTROLS</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngIf="Seats" >
+    <td><span>{{Seats.id}}</span></td>
+    <td><span>{{Seats.quantity}}</span></td>
+    <td><span>{{Seats.startStation}}</span></td>
+    <td><span>{{Seats.endStation}}</span></td>
+    <th><a class="cde"><i (click)="deleteResto(Seats.id)"> CANCEL TICKET</i></a>
+      </th>
+  </tr>
+  </tbody>
+  
+</table>
+  

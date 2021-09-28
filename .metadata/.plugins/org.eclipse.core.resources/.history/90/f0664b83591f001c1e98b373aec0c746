@@ -1,0 +1,3 @@
+spring.data.mongodb.uri=mongodb+srv://bharath:bharath123@cluster0.6zz76.mongodb.net/bookingorder?retryWrites=true&w=majority
+server.port:8081
+spring.application.name=bookingorder
