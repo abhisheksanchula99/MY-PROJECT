@@ -17,10 +17,10 @@ export class TrainComponent implements OnInit {
       this.trains=result
     })
   }
-  deleteResto(trai: any)
+  deleteTrains(trai: any)
   {
     this.trains.splice(trai-1,1)
-    this.httpClientService.deleteResto(trai).subscribe((result: any)=>{
+    this.httpClientService.deleteTrains(trai).subscribe((result: any)=>{
       console.warn("result",result)
     })
   }

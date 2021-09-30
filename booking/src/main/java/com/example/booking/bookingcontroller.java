@@ -24,7 +24,7 @@ public class bookingcontroller {
 	@PostMapping("/orders/addOrder")
 	public String saveBook(@RequestBody bookingorder book) {
 	bookrepository.save(book);
-	return "Booked ticket with id :  " + book.getId();
+	return book.getId();
     }
 	
 	@GetMapping("/orders")

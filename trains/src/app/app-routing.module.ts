@@ -9,6 +9,11 @@ import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { RegisteruserComponent } from './registeruser/registeruser.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
+import { UserComponent } from './user/user.component';
+import { PnrComponent } from './pnr/pnr.component';
 
 const routes: Routes = [
   {path:'',redirectTo:"home",pathMatch:"full"},
@@ -20,7 +25,13 @@ const routes: Routes = [
   {path: 'admin',component: AdminComponent},
   {path: 'home', component: HomeComponent},
   {path: 'trainSchedule',component: TimetableComponent},
-  {path: 'helpLine', component: ContactComponent}
+  {path: 'helpLine', component: ContactComponent},
+  {path: 'AdminLogin', component: LoginComponent},
+  {path: 'userreg', component: RegisteruserComponent},
+  {path: 'userLogin', component: UserloginComponent},
+  {path: 'user', component: UserComponent},
+  {path: 'pnr', component: PnrComponent}
+
 ];
 
 @NgModule({

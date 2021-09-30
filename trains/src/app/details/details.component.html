@@ -16,23 +16,39 @@
 <table class="table table-hover">
   <thead>
   <tr>
-    <th>TRAIN NUMBER</th>
-    <th>QUANTITY</th>
+    <th>PNR NUMBER</th>
+    <th>PASSENGER NAME</th>
+    <th>EMAIL-ID</th>
+    <th>AGE</th>
+    <th>GENDER</th>
+    <th>ADDRESS</th>
+    <th>TIME</th>
+    <th>DATE</th>
     <th>SOURCE STATION</th>
-    <th> DESTINATION STATION</th>
-    <th>CONTROLS</th>
+    <th>DESTINATION STATION</th>
+    <th>CLASS</th>
+    <th>CREDIT NUMBER</th>
+    <th>BANK NAME</th>
+    <th>Cancel Ticket</th>
   </tr>
   </thead>
   <tbody>
   <tr *ngIf="Seats" >
     <td><span>{{Seats.id}}</span></td>
-    <td><span>{{Seats.quantity}}</span></td>
+    <td><span>{{Seats.name}}</span></td>
+    <td><span>{{Seats.Email}}</span></td>
+    <td><span>{{Seats.age}}</span></td>
+    <td><span>{{Seats.gender}}</span></td>
+    <td><span>{{Seats.address}}</span></td>
+    <td><span>{{Seats.time}}</span></td>
+    <td><span>{{Seats.date}}</span></td>
     <td><span>{{Seats.startStation}}</span></td>
     <td><span>{{Seats.endStation}}</span></td>
+    <td><span>{{Seats.berth}}</span></td>
+    <td><span>{{Seats.credit}}</span></td>
+    <td><span>{{Seats.bankname}}</span></td>
     <th><a class="cde"><i (click)="deleteResto(Seats.id)"> CANCEL TICKET</i></a>
       </th>
   </tr>
   </tbody>
-  
 </table>
-  

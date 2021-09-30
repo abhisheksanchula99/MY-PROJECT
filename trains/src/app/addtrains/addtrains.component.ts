@@ -9,7 +9,7 @@ import { HttpClientService } from '../service/http-client.service';
 })
 export class AddtrainsComponent implements OnInit {
 
-  addResto=new FormGroup(
+  addTrains=new FormGroup(
     {
         train_id: new FormControl(''),
         train_name: new FormControl(''),
@@ -21,10 +21,9 @@ export class AddtrainsComponent implements OnInit {
   
     ngOnInit(): void {
     }
-    collectResto()
+    collectTrains()
     {
-      //console.warn(this.addResto.value)
-      this.httpClientService.saveResto(this.addResto.value).subscribe((result: any)=>{
+      this.httpClientService.saveTrain(this.addTrains.value).subscribe((result: any)=>{
       console.warn("result",result)})
     }
   

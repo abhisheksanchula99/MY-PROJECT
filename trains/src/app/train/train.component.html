@@ -1,9 +1,9 @@
 <div class="generic-container">
     <div class="panel panel-default">
       <div class="row">
-       <h2>List of Products</h2>
+       <h2>List of Trains</h2>
       </div>
-      <div class="panel-heading"><span class="lead">List of Products</span>
+      <div class="panel-heading"><span class="lead">Check availability of the trains here</span>
       </div>
       <div class="tablecontainer">
         <table class="table table-hover">
@@ -24,7 +24,7 @@
             <td><span>{{trai.from}}</span></td>
             <td><span>{{trai.to}}</span></td>
             <td><span>{{trai.fare}}</span></td>
-            <th><i (click)="deleteResto(trai.train_id)">delete</i>
+            <th><i (click)="deleteTrains(trai.train_id)">delete</i>
               <a routerLink="/update/{{trai.train_id}}"><i>update</i> </a>
               </th>
           </tr>

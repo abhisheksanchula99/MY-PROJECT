@@ -1,0 +1,21 @@
+.bbb{
+  padding-top: 200px;
+  padding-left: 200px;
+  
+}
+.ccc{
+  border: 2px solid ;
+  padding: 40px;
+}
+
+.ddd{
+  background-color: rgb(187, 33, 33);
+  
+}
+.ddd:hover{
+  background-color: rgb(130, 135, 161);
+}
+
+.ggg{
+  text-align: center;
+}

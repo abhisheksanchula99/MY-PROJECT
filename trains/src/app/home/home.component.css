@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    background-color: brown;
+    color: whitesmoke;
+    font-style:initial;
+}
+
+.help{
+    background-color: lawngreen;
+}
+.help:hover
+{
+    background-color: whitesmoke;
+    color: blue;
+}

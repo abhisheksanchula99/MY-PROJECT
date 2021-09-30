@@ -1,20 +1,52 @@
 <form [formGroup]="bookSeats" (ngSubmit)="collectTicks()">
     <div class="form-group">
-        <label >Id</label>
-        <input type="text" class="form-control" placeholder="Enter train id" formControlName="id">
+        <label >name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="name">
     </div>
     <div class="form-group">
-        <label >Quantity</label>
-        <input type="text" class="form-control" placeholder="Enter number of passengers" formControlName="quantity">
+        <label >Email-id</label>
+        <input type="email" class="form-control" placeholder="Enter Email-id" formControlName="Email">
     </div>
+    <div class="form-group">
+        <label >age</label>
+        <input type="number" class="form-control" placeholder="Enter age" formControlName="age">
+    </div>
+    <div class="form-group">
+        <label >gender</label>
+        <input type="text" class="form-control" formControlName="gender">
+    </div>
+    <div class="form-group">
+        <label >address</label>
+        <input type="text" class="form-control" placeholder="Enter address" formControlName="address">
+    </div>
+    <div class="form-group">
+        <label >Enter the time of journey</label>
+        <input type="time" class="form-control" formControlName="time">
+    </div>
+    <div class="form-group">
+        <label >Date</label>
+        <input type="text" class="form-control" placeholder="Enter day of journey" formControlName="date">
+    </div>
+    
     <div class="form-group">
         <label >Start</label>
-        <input type="text" class="form-control" placeholder="Enter Starting Station" formControlName="startStation">
+        <input type="text" class="form-control" placeholder="Enter Start station" formControlName="startStation">
     </div>
     <div class="form-group">
         <label >Destination</label>
-        <input type="text" class="form-control" placeholder="Enter Destination" formControlName="endStation">
+        <input type="text" class="form-control" placeholder="Enter End station" formControlName="endStation">
+    </div>
+    <div class="form-group">
+        <label >berth</label>
+        <input type="text" class="form-control" placeholder="Enter berth" formControlName="berth">
+    </div>
+    <div class="form-group">
+        <label >bankname</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="bankname">
+    </div>
+    <div class="form-group">
+        <label >credit no</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="credit">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    

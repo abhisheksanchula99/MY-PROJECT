@@ -1,0 +1,17 @@
+<div class="bbb">
+  <table class="ccc">
+<thead>
+<th>Your Ticket PNR No is</th>
+</thead>
+<tbody >
+  <tr *ngFor="let trai of train; let i=index">
+   
+    <td *ngIf ="i>=train.length -1">{{trai.id}}</td>
+  </tr>
+</tbody>
+</table>
+<br>
+</div>
+<div class="ggg">
+<button class="ddd" routerLink="/user">Return To User Home</button>
+</div>

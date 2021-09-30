@@ -14,6 +14,11 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { RegisteruserComponent } from './registeruser/registeruser.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
+import { UserComponent } from './user/user.component';
+import { PnrComponent } from './pnr/pnr.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +30,12 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AdminComponent,
     TimetableComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    RegisteruserComponent,
+    UserloginComponent,
+    UserComponent,
+    PnrComponent
   ],
   imports: [
     BrowserModule,

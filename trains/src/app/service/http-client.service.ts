@@ -26,11 +26,11 @@ export class HttpClientService{
       console.log('Test Call');
       return this.httpClient.get<Trains[]>('http://localhost:8080/Trains');
   }
-  saveResto(data: any)
+  saveTrain(data: any)
   {
      return this.httpClient.post<Trains[]>('http://localhost:8080/Trains',data)
   }
-  deleteResto(id: any)
+  deleteTrains(id: any)
   {
     return this.httpClient.delete<Trains[]>(`${'http://localhost:8080/Trains'}/${id}`)
   }
