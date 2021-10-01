@@ -1,0 +1,51 @@
+  <div class="form-group">
+    <input type="text" [(ngModel)]="text" class="form-control" placeholder="SOURCE" name="text" >
+    <button type="submit" class="btn btn-default" (click)="search()"  
+    >Submit</button>
+    
+    <div class="form-group">
+      <input type="text" [(ngModel)]="text1" class="form-control" placeholder="DESTINATION" name="text1" >
+      <button type="submit" class="btn btn-default" (click)="search1()"  
+      >Submit</button>
+    
+
+      
+<div class="zxy">
+<div class="generic-container">
+    <div class="panel panel-default">
+      <div class="row">
+       <h2>AVAILABLE TRAINS</h2>
+      </div>
+      <div class="panel-heading">
+      </div>
+      <div class="tablecontainer">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>TRAIN NUMBER</th>
+            <th>TRAIN NAME</th>
+            <th>SOURCE STATION</th>
+            <th> DESTINATION STATION</th>
+            <th> SEATS TO AVAIL</th>
+            <th>FARE</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let trai of trains">
+            <td><span>{{trai.train_id}}</span></td>
+            <td><span>{{trai.train_name}}</span></td>
+            <td><span>{{trai.from}}</span></td>
+            <td><span>{{trai.to}}</span></td>
+            <td><span>{{trai.berths}}</span></td>
+            <td><span>{{trai.fare}}</span></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+

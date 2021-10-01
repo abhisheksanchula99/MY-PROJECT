@@ -8,6 +8,7 @@ export class Trains {
     public  from: String,
     public  to: String,
     public  fare: number,
+    public  berths:number,
   ) {
   }
 }

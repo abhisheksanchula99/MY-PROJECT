@@ -15,7 +15,8 @@ export class AddtrainsComponent implements OnInit {
         train_name: new FormControl(''),
         from: new FormControl(''),
         to:new FormControl('') ,
-        fare: new FormControl('')
+        fare: new FormControl(''),
+        berths: new FormControl('')
     })
     constructor(private httpClientService: HttpClientService) { }
   

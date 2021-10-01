@@ -12,13 +12,13 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
-import { TimetableComponent } from './timetable/timetable.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { RegisteruserComponent } from './registeruser/registeruser.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { UserComponent } from './user/user.component';
 import { PnrComponent } from './pnr/pnr.component';
+import { TraindataComponent } from './traindata/traindata.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,13 +29,13 @@ import { PnrComponent } from './pnr/pnr.component';
     DetailsComponent,
     HomeComponent,
     AdminComponent,
-    TimetableComponent,
     ContactComponent,
     LoginComponent,
     RegisteruserComponent,
     UserloginComponent,
     UserComponent,
-    PnrComponent
+    PnrComponent,
+    TraindataComponent
   ],
   imports: [
     BrowserModule,

@@ -2,23 +2,27 @@
 <form [formGroup]="editResto" (ngSubmit)="collection()" >
     <div class="form-group">
         <label >Id</label>
-        <input type="text" class="form-control" placeholder="Enter name" formControlName="train_id">
+        <input type="number" class="form-control" placeholder="Enter Train number" formControlName="train_id">
     </div>
     <div class="form-group">
-        <label >Name</label>
-        <input type="text" class="form-control" placeholder="Enter name" formControlName="train_name">
+        <label > Train Name</label>
+        <input type="text" class="form-control" placeholder="Enter Train name" formControlName="train_name">
     </div>
     <div class="form-group">
-        <label >Name</label>
-        <input type="text" class="form-control" placeholder="Enter name" formControlName="from">
+        <label >From</label>
+        <input type="text" class="form-control" placeholder="Enter Starting point" formControlName="from">
     </div>
     <div class="form-group">
-        <label >Name</label>
-        <input type="text" class="form-control" placeholder="Enter name" formControlName="to">
+        <label >To</label>
+        <input type="text" class="form-control" placeholder="Enter Destination" formControlName="to">
     </div>
     <div class="form-group">
-        <label >Name</label>
-        <input type="text" class="form-control" placeholder="Enter name" formControlName="fare">
+        <label >Available Seats</label>
+        <input type="number" class="form-control" placeholder="Enter the number of seats" formControlName="berths">
+    </div>
+    <div class="form-group">
+        <label >Fare</label>
+        <input type="text" class="form-control" placeholder="Enter Fare" formControlName="fare">
     </div>
     <button type="submit" class="btn btn-primary">Update</button>
     </form>

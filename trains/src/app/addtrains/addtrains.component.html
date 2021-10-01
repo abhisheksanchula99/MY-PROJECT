@@ -2,11 +2,11 @@
 <form [formGroup]="addTrains" (ngSubmit)="collectTrains()">
     <div class="form-group">
         <label >Id</label>
-        <input type="text" class="form-control" placeholder="Enter train id" formControlName="train_id">
+        <input type="number" class="form-control" placeholder="Enter train id" formControlName="train_id">
     </div>
     <div class="form-group">
-        <label >Name</label>
-        <input type="text" class="form-control" placeholder="Enter name" formControlName="train_name">
+        <label >Train Name</label>
+        <input type="text" class="form-control" placeholder="Enter train name" formControlName="train_name">
     </div>
     <div class="form-group">
         <label >From</label>
@@ -17,8 +17,13 @@
         <input type="text" class="form-control" placeholder="Enter Destination" formControlName="to">
     </div>
     <div class="form-group">
+        <label >Available Seats</label>
+        <input type="number" class="form-control" placeholder="Enter the number of seats" formControlName="berths">
+    </div>
+
+    <div class="form-group">
         <label >Fare</label>
-        <input type="text" class="form-control" placeholder="Enter the ticket fare" formControlName="fare">
+        <input type="number" class="form-control" placeholder="Enter the ticket fare" formControlName="fare">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     </form>

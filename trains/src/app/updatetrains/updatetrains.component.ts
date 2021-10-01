@@ -15,7 +15,8 @@ export class UpdatetrainsComponent implements OnInit {
       train_name: new FormControl(''),
       from: new FormControl(''),
       to:new FormControl('') ,
-      fare: new FormControl('')
+      fare: new FormControl(''),
+      berths: new FormControl('')
     })
 
   constructor(private router:ActivatedRoute,private httpClientService: HttpClientService) { }

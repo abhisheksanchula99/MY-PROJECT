@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -24,6 +27,9 @@ public class TrainController {
 	
 	@Autowired
 	Trainrepo trainrepo;
+	@Autowired
+	MongoOperations mongoOperations;
+	
 	
 	@GetMapping("/")
 	public String welcome() 
@@ -59,12 +65,31 @@ public class TrainController {
 
 	  @DeleteMapping("/Trains/{id}")
 	  public void deleteTrain(@PathVariable("id") int id) {
-		trainrepo.deleteById(id);
-		
-		
-		
-	    
+		trainrepo.deleteById(id);   
 	  }
+	  @PostMapping("/regexfrom")
+	  public List<Train> regexTrains(@RequestBody String fromm){
+		  Query query = new Query();
+		  query.addCriteria(Criteria.where("from").regex(fromm));
+		  List<Train> trai = mongoOperations.find(query, Train.class);
+		  return trai;
+	  }
+	  
+	  
+	  @PostMapping("/regexto")
+	  public List<Train> regexTrain(@RequestBody String tooo){
+		  Query query = new Query();
+		  query.addCriteria(Criteria.where("to").regex(tooo));
+		  List<Train> trai = mongoOperations.find(query, Train.class);
+		  return trai;
+	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 	   
 	}
 
