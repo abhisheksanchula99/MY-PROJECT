@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DeleteService } from '../service/delete.service';
 
 @Component({
@@ -10,7 +11,8 @@ export class DetailsComponent implements OnInit {
 
   id:any;
   Seats:any;
-  constructor(private httpClientService: DeleteService) { }
+  constructor(private httpClientService: DeleteService,
+              private router: Router) { }
 
 public getbookbyid(){
   let ord=this.httpClientService.getCurrentResto(this.id);
@@ -22,6 +24,8 @@ deleteResto(id: any)
   {
     this.httpClientService.deleteResto(id).subscribe((result: any)=>{
       console.warn("result",result)
+      alert("Your TICKET is cancelled");
+      (<any>this.router).navigate(["/user"]);
     })
   }
 

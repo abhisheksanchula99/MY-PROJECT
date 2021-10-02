@@ -26,7 +26,10 @@ public class bookingcontroller {
 	bookrepository.save(book);
 	return book.getId();
     }
-	
+	@GetMapping("/")
+	public String Check(){
+		return("tested");
+	}
 	@GetMapping("/orders")
 	public List<bookingorder> getAllTrains(){
 		return bookrepository.findAll();
@@ -46,6 +49,6 @@ public class bookingcontroller {
 	 @DeleteMapping("/orders/delete/{id}")
 	 public String deleteOrder (@PathVariable String id) {
 	  bookrepository.deleteById(id);
-		return "Order deleted with id : "+id;
+		return null;
 		}
 	}

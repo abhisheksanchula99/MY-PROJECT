@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router} from '@angular/router';
+import { HttpClientService, Trains } from '../service/http-client.service';
+import { TraindataService } from '../service/traindata.service';
 import { UserServiceService } from '../service/user-service.service';
 
 @Component({
@@ -9,6 +11,7 @@ import { UserServiceService } from '../service/user-service.service';
   styleUrls: ['./reservation.component.css']
 })
 export class ReservationComponent implements OnInit {
+  [x: string]: any;
   bookSeats=new FormGroup(
     {
       id: new FormControl(''),
@@ -26,10 +29,16 @@ export class ReservationComponent implements OnInit {
       Email: new FormControl('')
 
     })
-    constructor(private httpClientService: UserServiceService, private router: Router) { }
+    trains: Trains[]=[];
+    constructor(private httpClientService: UserServiceService, private router: Router, private httpClientServic: HttpClientService, private httpClientServi: TraindataService) { }
   
     ngOnInit(): void {
+      this.httpClientServic.getTrains().subscribe((result)=>{
+        console.warn(result)
+        this.trains=result
+      })
     }
+    
     collectTicks()
     {
       //console.warn(this.addResto.value)
@@ -39,5 +48,23 @@ export class ReservationComponent implements OnInit {
       alert('Booked your ticket!!')
       })
     }
+   
+search()
+{
+ // console.warn(this.editResto.value);
+  this.httpClientServi.updateResto(this.text).subscribe((result: any)=>{
+    console.warn(result)
+    this.trains=result
+  })
+}
+
+search1()
+{
+ // console.warn(this.editResto.value);
+  this.httpClientServi.updateRest(this.text1).subscribe((result: any)=>{
+    console.warn(result)
+    this.trains=result
+  })
+}
   }
     

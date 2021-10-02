@@ -1,9 +1,13 @@
+
+<h1 style="text-align: center">CANCEL YOUR TICKET HERE </h1>
+<br>
+<br>
 <div class="container">
   <div class="row">
     <div id="custom-search-input">
         <div class="input-grout col-md-12" style="text-align:center">
           <input type="text" class="search-query form-control" placeholder="search with id" name="id" [(ngModel)]="id"/>
-          <span class="input-hroup-btn">
+          <span class="input-hroup-btn"><br>
             <button class="btn btn-danger" type="button" (click)="getbookbyid()">search
               <span class=" glyphicon glyphicon-search"></span>
             </button>
@@ -29,7 +33,6 @@
     <th>CLASS</th>
     <th>CREDIT NUMBER</th>
     <th>BANK NAME</th>
-    <th>Cancel Ticket</th>
   </tr>
   </thead>
   <tbody>
@@ -47,8 +50,10 @@
     <td><span>{{Seats.berth}}</span></td>
     <td><span>{{Seats.credit}}</span></td>
     <td><span>{{Seats.bankname}}</span></td>
-    <th><a class="cde"><i (click)="deleteResto(Seats.id)"> CANCEL TICKET</i></a>
+    <th><button class="cde"><i (click)="deleteResto(Seats.id)"> CANCEL TICKET</i></button>
       </th>
   </tr>
   </tbody>
 </table>
+<br>
+<button class="btn" title="Print Screen" alt="Print Screen" onclick="window.print();"    target="_blank" style="cursor:pointer;">CLICK HERE TO PRINT TICKET!</button>

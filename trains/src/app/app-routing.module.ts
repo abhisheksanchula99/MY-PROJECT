@@ -32,7 +32,6 @@ const routes: Routes = [
   {path: 'pnr', component: PnrComponent},
   {path: 'trainData', component: TraindataComponent}
 
-
 ];
 
 @NgModule({
