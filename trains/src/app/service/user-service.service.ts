@@ -5,7 +5,7 @@ import {HttpClient} from '@angular/common/http';
 export class orders {
   constructor(
     public  id: String,
-    public  time: String,
+    public  train: String,
     public  startStation: String,
     public  endStation: String,
     public  name:String,
@@ -16,7 +16,7 @@ export class orders {
 	  public  berth:String,
 	  public  bankname:String,
     public  date:String,
-    public  Email:String
+    public  email:String
   ) {
   }
 }

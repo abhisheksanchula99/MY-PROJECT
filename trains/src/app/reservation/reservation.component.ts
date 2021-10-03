@@ -15,7 +15,7 @@ export class ReservationComponent implements OnInit {
   bookSeats=new FormGroup(
     {
       id: new FormControl(''),
-      time: new FormControl(''),
+      train: new FormControl(''),
       startStation: new FormControl(''),
       endStation:new FormControl(''),
       name:new FormControl(''),
@@ -26,7 +26,7 @@ export class ReservationComponent implements OnInit {
       berth:new FormControl(''),
       bankname:new FormControl(''),
       date: new FormControl(''),
-      Email: new FormControl('')
+      email: new FormControl('')
 
     })
     trains: Trains[]=[];

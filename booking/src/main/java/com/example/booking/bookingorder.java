@@ -13,7 +13,7 @@ public class bookingorder {
 	
 	@Id
 	private String id;
-	private String time;
+	private String train;
 	private String startStation;
 	private String endStation;
 	private String name;
@@ -24,17 +24,17 @@ public class bookingorder {
 	private String berth;
 	private String bankname;
 	private String date;
-	private String Email;
+	private String email;
 	
 	public bookingorder() {
 		
 	}
 
-	public bookingorder(String id, String time, String startStation, String endStation, String name, String age,
+	public bookingorder(String id, String train, String startStation, String endStation, String name, String age,
 			String gender, String credit, String address, String berth, String bankname, String date, String email) {
 		super();
 		this.id = id;
-		this.time = time;
+		this.train = train;
 		this.startStation = startStation;
 		this.endStation = endStation;
 		this.name = name;
@@ -45,7 +45,7 @@ public class bookingorder {
 		this.berth = berth;
 		this.bankname = bankname;
 		this.date = date;
-		this.Email = email;
+		this.email = email;
 	}
 
 	public String getId() {
@@ -56,12 +56,12 @@ public class bookingorder {
 		this.id = id;
 	}
 
-	public String getTime() {
-		return time;
+	public String getTrain() {
+		return train;
 	}
 
-	public void setTime(String time) {
-		this.time = time;
+	public void setTrain(String train) {
+		this.train = train;
 	}
 
 	public String getStartStation() {
@@ -145,20 +145,19 @@ public class bookingorder {
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	@Override
 	public String toString() {
-		return "bookingorder [id=" + id + ", time=" + time + ", startStation=" + startStation + ", endStation="
+		return "bookingorder [id=" + id + ", train=" + train + ", startStation=" + startStation + ", endStation="
 				+ endStation + ", name=" + name + ", age=" + age + ", gender=" + gender + ", credit=" + credit
-				+ ", address=" + address + ", berth=" + berth + ", bankname=" + bankname + ", date=" + date + ", Email="
-				+ Email + "]";
-	}
+				+ ", address=" + address + ", berth=" + berth + ", bankname=" + bankname + ", date=" + date + ", email="
+				+ email + "]";
+	}	
 	
-
 }

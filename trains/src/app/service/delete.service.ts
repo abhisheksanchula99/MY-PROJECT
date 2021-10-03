@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
 export class Seats {
   constructor(
     public  id: String,
-    public  time: String,
+    public  train: String,
     public  startStation: String,
     public  endStation: String,
-    public name:String,
+    public  name:String,
   	public  age:String,
   	public  gender:String,
 	  public  credit:String,
@@ -17,7 +17,7 @@ export class Seats {
 	  public  berth:String,
 	  public  bankname:String,
     public  date:String,
-    public  Email:String
+    public  email:String
   ) {
   }
 }

@@ -1,0 +1,23 @@
+h1{
+  text-align: center;
+  vertical-align: center ;
+  background: linear-gradient(to right, brown, red);
+  color: whitesmoke;
+  font-style:initial;
+  font-size: 70px;
+  padding-bottom: 12px;
+}
+.bg {
+    background: brown;
+    background: linear-gradient(to right, brown, red);
+    padding-bottom: 15%;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+   
+ 
+  
