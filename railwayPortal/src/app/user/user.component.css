@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    vertical-align: center ;
+    background: linear-gradient(to right, rgb(11, 182, 235), rgb(240, 244, 245));
+    color: rgb(1, 19, 19);
+    font-style:initial;
+    font-size: 70px;
+    padding-bottom: 12px;
+  }
+  .bg {
+      background: brown;
+      background: linear-gradient(to right, rgb(11, 182, 235), rgb(240, 244, 245));
+      padding-bottom: 35%;
+    }
+    .card {
+        margin: 100px auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+button:hover
+{
+    background : rgb(122, 114, 114);
+    color: honeydew;
+    height: 100px;
+    font: bolder;
+
+}
+.card-header
+{
+    background-color: rgb(32, 31, 31);
+    color: blanchedalmond;
+}

@@ -1,0 +1,143 @@
+<div class="bg">
+        
+    <body class="Head">
+        <h1 style="font: bold;"> 
+            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0025/3353/brand.gif?itok=Mpi9eAx5"  height ="180px" width ="180px" align="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpoPOxd0v7rrsA8hggM1mbPom7HusxP_-GxuIDeZXqbh4SxfB08RMJp_s4HhQsv-SOArY&usqp=CAU"  height ="180px" width ="180px" align="right">
+            PAKISTAN RAILWAYS TRANSPORT CORPARATION</h1>
+            
+        <marquee width="100%" direction="left" height="100%" scrollamount="10" style="color: rgb(7, 7, 7); background-color: goldenrod;">
+                WELCOME TO PAKISTAN RAILWAYS-WE ARE AVAILABLE AT YOUR SERVICE ROUND THE CLOCK- WE WISH YOU WILL HAVE A HAPPY AND SAFE TRAVEL WITH US-FOR MORE GUIDENCE CONTACT US IN THE SUPPORT SECTION-THANK YOU
+            </marquee>
+         </body>
+         <br>
+         <div class="h">
+            Reserve your TICKET here 
+            </div>
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+<form [formGroup]="bookSeats" (ngSubmit)="collectTicks()">
+    <div class="col-md-12">
+        <label >Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="name">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.name.touched && bookSeats.controls.name.errors"> Name is required
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Email-id</label>
+        <input type="email" class="form-control" placeholder="Enter Email-id" formControlName="email">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.email.touched && bookSeats.controls.email.errors"> Email-id is required
+        </span>
+        <br>
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.email.touched && bookSeats.controls.email.errors"> Enter a valid Email-id
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Age</label>
+        <input type="number" class="form-control" placeholder="Enter age" formControlName="age">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.age.touched && bookSeats.controls.age.errors"> Age is required
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label>Select yor Gender</label>
+        <br> 
+    <div>
+        <input type="radio" id="m" formControlName="gender" value="Male">
+        <label for="m">Male</label><br>
+    </div>
+    <div>
+        <input type="radio" id="f" formControlName="gender" value="Female">
+        <label for="f">Female</label><br>
+    </div>
+    <div>
+        <input type="radio" id="o" formControlName="gender" value="Others">
+        <label for="o">Others</label>
+    </div>
+    <span style="color: red;" class="error" *ngIf="bookSeats.controls.gender.touched && bookSeats.controls.gender.errors"> gender is required
+    </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Address</label>
+        <input type="text" class="form-control" placeholder="Enter address" formControlName="address">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.address.touched && bookSeats.controls.address.errors"> Address is required
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Train Name</label>
+        <input type="text" class="form-control" placeholder="Enter the Train name" formControlName="train">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.train.touched && bookSeats.controls.train.errors"> Train name is required
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Date</label>
+        <input type="date" class="form-control" placeholder="Enter date of journey" formControlName="date">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.date.touched && bookSeats.controls.date.errors"> date is required
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Start</label>
+        <select type="select"class="form-control" [(ngModel)]="text" placeholder="Enter the Start station" formControlName="startStation">
+            <option></option>
+            <option *ngFor="let trai of trains">
+                {{trai.from}}
+            </option>
+        </select>
+    </div>
+    <span style="color: red;" class="error" *ngIf="bookSeats.controls.startStation.touched && bookSeats.controls.startStation.errors"> start station is required
+    </span>
+    <a class="abd" (click)="search()">Enter</a>
+    <br>
+    <br>
+    <div class="col-md-12">
+        <label >Destination</label>
+        <select type="select" class="form-control"[(ngModel)]="text1"  placeholder="Enter End station" formControlName="endStation">
+            <option></option>
+            <option *ngFor="let trai of trains">
+                {{trai.to}}
+            </option>
+        </select>
+    </div>
+    <span style="color: red;" class="error" *ngIf="bookSeats.controls.endStation.touched && bookSeats.controls.endStation.errors"> End Station is required
+    </span>
+    <a class="abd" (click)="search1()">Enter</a>
+    <br>
+    <br>
+    <div class="col-md-12">
+        <label >Berth</label>
+        <input type="text" class="form-control" placeholder="Enter berth" formControlName="berth">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.berth.touched && bookSeats.controls.berth.errors"> Berth Class is required
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Bankname</label>
+        <input type="text" class="form-control" placeholder="Enter the Bank name" formControlName="bankname">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.bankname.touched && bookSeats.controls.bankname.errors"> Bank Name is required
+        </span>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <label >Account Number</label>
+        <input type="number" class="form-control" placeholder="Enter Account Number" formControlName="credit">
+        <span style="color: red;" class="error" *ngIf="bookSeats.controls.credit.touched && bookSeats.controls.credit.errors"> Acc No is required
+        </span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" style="align-items: center;">Submit</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

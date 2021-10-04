@@ -1,0 +1,41 @@
+<div class="bg">
+        
+  <body class="Head">
+      <h1>
+          <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0025/3353/brand.gif?itok=Mpi9eAx5"  height ="180px" width ="180px" align="left">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpoPOxd0v7rrsA8hggM1mbPom7HusxP_-GxuIDeZXqbh4SxfB08RMJp_s4HhQsv-SOArY&usqp=CAU"  height ="180px" width ="180px" align="right">
+          PAKISTAN RAILWAYS TRANSPORT CORPARATION</h1>
+          
+      <marquee width="100%" direction="left" height="100%" scrollamount="10" style="color: rgb(7, 7, 7); background-color: goldenrod;">
+              WELCOME TO PAKISTAN RAILWAYS-WE ARE AVAILABLE AT YOUR SERVICE ROUND THE CLOCK- WE WISH YOU WILL HAVE A HAPPY AND SAFE TRAVEL WITH US-FOR MORE GUIDENCE CONTACT US IN THE SUPPORT SECTION-THANK YOU
+          </marquee>
+       </body>
+       <br>
+<div style="text-align: center; background-color: brown; color: cornsilk; font-size: large; font: bolder;" >TICKET</div>
+<div class="container">
+<table class="table table-hover">
+<thead>
+<th scope="col">PNR No</th>
+<th scope="col">Train name</th>
+<th scope="col">Passenger Name</th>
+<th scope="col">Age</th>
+<th scope="col">Gender</th>
+<th scope="col">Berth Type</th>
+</thead>
+<tbody>
+  <tr *ngFor="let trai of train; let i=index">
+    <td *ngIf ="i>=train.length -1">{{trai.id}}</td>
+    <td *ngIf ="i>=train.length -1">{{trai.train}}</td>  
+    <td *ngIf ="i>=train.length -1">{{trai.name}}</td>  
+    <td *ngIf ="i>=train.length -1">{{trai.age}}</td>
+    <td *ngIf ="i>=train.length -1">{{trai.gender}}</td>
+    <td *ngIf ="i>=train.length -1">{{trai.berth}}</td>
+    <button *ngIf ="i>=train.length -1" class="btn" title="Print Screen" alt="Print Screen" onclick="window.print();"    target="_blank" style="cursor:pointer;">CLICK HERE TO PRINT TICKET!</button> 
+  </tr>
+</tbody>
+</table>
+<div class="ggg">
+  <button class="ddd"routerLink="/user">Back to User</button>
+</div> 
+</div>
+</div>

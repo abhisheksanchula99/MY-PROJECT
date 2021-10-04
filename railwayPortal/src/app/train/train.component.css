@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    vertical-align: center ;
+    background: linear-gradient(to right, brown, red);
+    color: whitesmoke;
+    font-style:initial;
+    font-size: 70px;
+    padding-bottom: 12px;
+  }
+  .bg {
+      background: brown;
+      background: linear-gradient(to right, brown, red);
+      padding-bottom: 35%;
+    }
+    .u:hover:not(.active){
+        background-color: rgb(19, 209, 19);
+        color: rgb(247, 245, 250);
+      }
+    .d:hover:not(.active){
+        background-color: rgb(240, 11, 11);
+        color: rgb(247, 245, 250);
+      }
+      .y:hover:not(.active){
+        background-color: rgb(26, 11, 240);
+        color: rgb(247, 245, 250);
+      }
+      .t{
+        text-align: center;
+      }
+      .haa{
+        text-align: right;
+      }
