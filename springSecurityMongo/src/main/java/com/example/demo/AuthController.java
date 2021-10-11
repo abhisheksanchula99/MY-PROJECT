@@ -1,6 +1,8 @@
 package com.example.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -18,9 +20,11 @@ import com.example.demo.model.*;
 import com.example.demo.service.UserService;
 import com.example.demo.utils.JwtUtils;
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins="*")
 @RestController
+@RequestMapping("/Adlog")
 public class AuthController {
+	Logger log=LoggerFactory.getLogger(AuthController.class);
 
 	
 	
@@ -38,6 +42,9 @@ public class AuthController {
 	
 	@PostMapping("/subs")
 	private ResponseEntity<AuthenticationResponse>subscribeClient(@RequestBody AuthenticationRequest authreq){
+		
+		log.error("PostMapping() method executed");
+
 		UserModel usermodel =new UserModel();
 		
 		usermodel.setUsername(authreq.getUsername());
@@ -59,6 +66,8 @@ public class AuthController {
 	
 	@PostMapping("/auth")
 	private ResponseEntity<?> authenticateClient(@RequestBody AuthenticationRequest authreq){
+		log.error("PostMapping() method executed");
+
 		String username=authreq.getUsername();
 		String password= authreq.getPassword();
 		try {

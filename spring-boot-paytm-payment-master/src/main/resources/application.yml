@@ -1,0 +1,6 @@
+server:
+  port: 9069
+spring:
+  application:
+    name: SPRING-BOOT-PAYTM-PAYMENT
+    

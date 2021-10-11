@@ -19,6 +19,6 @@ export class PassengerloginService {
   }
   saveResto(data: any)
    {
-      return this.httpClient.post<userlogin[]>('http://localhost:8683/auth',data)
+      return this.httpClient.post<userlogin[]>('/Userlog/auth',data)
    }
 }

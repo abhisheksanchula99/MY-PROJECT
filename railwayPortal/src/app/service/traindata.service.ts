@@ -25,17 +25,17 @@ export class TraindataService{
 
   getTrains(){
       console.log('Test Call');
-      return this.httpClient.get<Trains[]>('http://localhost:8080/Trains');
+      return this.httpClient.get<Trains[]>('AdminControls/Trains');
   }
   
   updateResto(data:any)
   {
-    return this.httpClient.post<Trains[]>('http://localhost:8080/regexfrom',data)
+    return this.httpClient.post<Trains[]>('AdminControls/regexfrom',data)
   }
 
   updateRest(data:any)
   {
-    return this.httpClient.post<Trains[]>('http://localhost:8080/regexto',data)
+    return this.httpClient.post<Trains[]>('AdminControls/regexto',data)
   }
 
 }

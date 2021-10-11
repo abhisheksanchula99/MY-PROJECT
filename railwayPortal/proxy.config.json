@@ -1,0 +1,27 @@
+{
+    "/AdminControls/**": {
+      "target": "http://localhost:20003",
+      "secure": false,
+      "logLevel": "debug"
+  
+    },
+    "/book/**": {
+      "target": "http://localhost:20003",
+      "secure": false,
+      "logLevel": "debug"
+  
+    },
+    "/Adlog/**": {
+      "target": "http://localhost:20003",
+      "secure": false,
+      "logLevel": "debug"
+  
+    },
+    "/Userlog/**": {
+      "target": "http://localhost:20003",
+      "secure": false,
+      "logLevel": "debug"
+  
+    }
+    
+  }

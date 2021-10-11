@@ -31,17 +31,17 @@ export class DeleteService {
 
   getCurrentResto(id: string)
   {
-    return this.httpClient.get("http://localhost:8081/orders/"+id)
+    return this.httpClient.get("book/orders/"+id)
   }
 
 
   getorders()
   {
-    return this.httpClient.get<Seats[]>('http://localhost:8081/orders') 
+    return this.httpClient.get<Seats[]>('book/orders') 
    }
 
    deleteResto(id: any)
    {
-     return this.httpClient.delete<Seats[]>(`${'http://localhost:8081/orders/delete'}/${id}`)
+     return this.httpClient.delete<Seats[]>(`${'book/orders/delete'}/${id}`)
    }
 }

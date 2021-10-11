@@ -19,6 +19,6 @@ export class AserviceService {
   }
   saveResto(data: any)
    {
-      return this.httpClient.post<login[]>('http://localhost:8682/auth',data)
+      return this.httpClient.post<login[]>('/Adlog/auth',data)
    }
 }

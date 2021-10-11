@@ -18,7 +18,7 @@ export class PassengerregisterService {
   }
   saveResto(data: any)
    {
-      return this.httpClient.post<userlogin[]>('http://localhost:8683/subs',data)
+      return this.httpClient.post<userlogin[]>('/Userlog/subs',data)
    }
 
 }

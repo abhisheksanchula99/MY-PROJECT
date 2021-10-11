@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: 
+              -GET
+              -POST
+              -PUT
+              -DELETE
+                      
+      routes:
+        - id: admin
+          uri: http://localhost:8083/
+          predicates:
+            - Path=/AdminControls/**
+        - id: bookingorder
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/book/**
+        - id: Admin-Service
+          uri: http://localhost:8682/
+          predicates:
+            - Path=/Adlog/**
+        - id: Users-Service
+          uri: http://localhost:8683/
+          predicates:
+            - Path=/Userlog/**
+
+server:
+  port: 20003

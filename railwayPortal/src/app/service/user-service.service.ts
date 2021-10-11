@@ -29,6 +29,6 @@ export class UserServiceService {
  }
  saveTrains(data: any)
   {
-     return this.httpClient.post<orders[]>('http://localhost:8081/orders/addOrder',data)
+     return this.httpClient.post<orders[]>('book/orders/addOrder',data)
   }
 }

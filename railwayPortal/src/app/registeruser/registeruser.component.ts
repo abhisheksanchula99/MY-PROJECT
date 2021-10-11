@@ -27,7 +27,7 @@ export class RegisteruserComponent implements OnInit {
       //console.warn(this.addResto.value)
       this.httpClientService.saveResto(this.adminlog.value).subscribe((result: any)=>{
       console.warn("result",result);
-      (<any>this.router).navigate(["/home"])  
+      (<any>this.router).navigate(["/userLogin"])  
         alert("register successful")
     })
     }

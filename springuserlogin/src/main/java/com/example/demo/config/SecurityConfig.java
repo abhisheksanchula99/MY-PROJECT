@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
-		http.csrf().disable().authorizeRequests().antMatchers("/subs", "/auth")
+		http.csrf().disable().authorizeRequests().antMatchers("/Userlog/subs", "/Userlog/auth")
 		.permitAll()
 		.antMatchers("/v2/api-docs", "/configuration/**", "/swagger*/**", "/webjars/**")
 		.permitAll()

@@ -1,0 +1,403 @@
+2021-10-10 21:19:12,795 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2021-10-10 21:19:13,051 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-10-10 21:19:13,055 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/Admin-Service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2021-10-10 21:19:13,723 [INFO] com.example.demo.SpringSecurityMongoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-10 21:21:34,725 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-10 21:21:37,145 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 2354 ms. Found 1 MongoDB repository interfaces.
+2021-10-10 21:21:47,014 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0ff63cb0-b75c-33a0-bdb5-4e2b7b67e549
+2021-10-10 21:21:49,435 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:49,476 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.data.RepositoryMetricsAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.data.RepositoryMetricsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:49,503 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:49,510 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'management.metrics.export.simple-org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:49,669 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'simpleConfig' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimplePropertiesConfigAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:49,705 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:49,717 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'micrometerClock' of type [io.micrometer.core.instrument.Clock$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:50,001 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'simpleMeterRegistry' of type [io.micrometer.core.instrument.simple.SimpleMeterRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:50,126 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'repositoryTagsProvider' of type [org.springframework.boot.actuate.metrics.data.DefaultRepositoryTagsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:50,143 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'metricsRepositoryMethodInvocationListener' of type [org.springframework.boot.actuate.metrics.data.MetricsRepositoryMethodInvocationListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 21:21:55,505 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8682 (http)
+2021-10-10 21:21:55,671 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-10-10 21:21:55,673 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-10-10 21:21:56,756 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-10 21:21:56,757 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 162799 ms
+2021-10-10 21:21:57,375 [INFO] org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.swz5y.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-3vu4pm-shard-0'}
+2021-10-10 21:21:57,474 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-srv-cluster0.swz5y.mongodb.net] Adding discovered server cluster0-shard-00-02.swz5y.mongodb.net:27017 to client view of cluster
+2021-10-10 21:21:57,724 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-srv-cluster0.swz5y.mongodb.net] Adding discovered server cluster0-shard-00-00.swz5y.mongodb.net:27017 to client view of cluster
+2021-10-10 21:21:57,739 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-srv-cluster0.swz5y.mongodb.net] Adding discovered server cluster0-shard-00-01.swz5y.mongodb.net:27017 to client view of cluster
+2021-10-10 21:21:58,529 [WARN] org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-10-10 21:21:58,811 [WARN] org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-10-10 21:21:59,011 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:1, serverValue:419981}] to cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,045 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:4, serverValue:367987}] to cluster0-shard-00-00.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,045 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:2, serverValue:419981}] to cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,059 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:3, serverValue:367987}] to cluster0-shard-00-00.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,082 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:6, serverValue:366590}] to cluster0-shard-00-01.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,085 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:5, serverValue:366590}] to cluster0-shard-00-01.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,089 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.swz5y.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=451122300, setName='atlas-3vu4pm-shard-0', canonicalAddress=cluster0-shard-00-00.swz5y.mongodb.net:27017, hosts=[cluster0-shard-00-00.swz5y.mongodb.net:27017, cluster0-shard-00-02.swz5y.mongodb.net:27017, cluster0-shard-00-01.swz5y.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.swz5y.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=9, topologyVersion=TopologyVersion{processId=61560a28931ad8dfbc143c42, counter=4}, lastWriteDate=Sun Oct 10 21:21:48 IST 2021, lastUpdateTimeNanos=205412184267600}
+2021-10-10 21:21:59,088 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.swz5y.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=441710700, setName='atlas-3vu4pm-shard-0', canonicalAddress=cluster0-shard-00-02.swz5y.mongodb.net:27017, hosts=[cluster0-shard-00-00.swz5y.mongodb.net:27017, cluster0-shard-00-02.swz5y.mongodb.net:27017, cluster0-shard-00-01.swz5y.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.swz5y.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007a, setVersion=9, topologyVersion=TopologyVersion{processId=61560b3b4ec7e0bfd5c83bbb, counter=6}, lastWriteDate=Sun Oct 10 21:21:48 IST 2021, lastUpdateTimeNanos=205412170215200}
+2021-10-10 21:21:59,091 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.swz5y.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=465837300, setName='atlas-3vu4pm-shard-0', canonicalAddress=cluster0-shard-00-01.swz5y.mongodb.net:27017, hosts=[cluster0-shard-00-00.swz5y.mongodb.net:27017, cluster0-shard-00-02.swz5y.mongodb.net:27017, cluster0-shard-00-01.swz5y.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.swz5y.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=9, topologyVersion=TopologyVersion{processId=61560c1c508d65da7ca3b56f, counter=4}, lastWriteDate=Sun Oct 10 21:21:48 IST 2021, lastUpdateTimeNanos=205412209545200}
+2021-10-10 21:21:59,094 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Setting max election id to 7fffffff000000000000007a from replica set primary cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,095 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Setting max set version to 9 from replica set primary cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:21:59,096 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Discovered replica set primary cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:22:00,606 [DEBUG] com.example.demo.service.JwtFilterReq [restartedMain] Filter 'jwtFilterReq' configured for use
+2021-10-10 21:22:00,810 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-10-10 21:22:03,740 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-10-10 21:22:04,522 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cd859bc, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bb41b01, org.springframework.security.web.header.HeaderWriterFilter@70493f61, org.springframework.security.web.authentication.logout.LogoutFilter@6eacba7d, com.example.demo.service.JwtFilterReq@2a9ed2b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49343622, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@755ead39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48132df7, org.springframework.security.web.session.SessionManagementFilter@b784b0a, org.springframework.security.web.access.ExceptionTranslationFilter@3f29b35c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ed5a03c]
+2021-10-10 21:22:04,566 [INFO] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-10-10 21:22:05,094 [WARN] com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-10 21:22:05,095 [INFO] com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-10 21:22:05,134 [WARN] com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-10 21:22:05,135 [INFO] com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-10 21:22:06,513 [INFO] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
+2021-10-10 21:22:06,708 [WARN] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-10-10 21:22:07,247 [INFO] org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2021-10-10 21:22:08,118 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2021-10-10 21:22:08,931 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2021-10-10 21:22:08,932 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2021-10-10 21:22:09,424 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2021-10-10 21:22:09,426 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2021-10-10 21:22:10,327 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2021-10-10 21:22:10,795 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2021-10-10 21:22:10,796 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2021-10-10 21:22:10,807 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2021-10-10 21:22:10,860 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2021-10-10 21:22:10,874 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2021-10-10 21:22:10,895 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2021-10-10 21:22:10,910 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2021-10-10 21:22:11,268 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2021-10-10 21:22:11,292 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2021-10-10 21:22:11,386 [INFO] com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-10 21:22:11,477 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1633881131475 with initial instances count: 3
+2021-10-10 21:22:11,487 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ADMIN-SERVICE with eureka with status UP
+2021-10-10 21:22:11,564 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1633881131564, current=UP, previous=STARTING]
+2021-10-10 21:22:11,567 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682: registering service...
+2021-10-10 21:22:11,615 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682 - registration status: 204
+2021-10-10 21:22:11,787 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8682 (http) with context path ''
+2021-10-10 21:22:11,804 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8682
+2021-10-10 21:22:11,967 [INFO] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2021-10-10 21:22:12,025 [INFO] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2021-10-10 21:22:12,140 [INFO] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2021-10-10 21:22:12,968 [INFO] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2021-10-10 21:22:13,023 [INFO] com.example.demo.SpringSecurityMongoApplication [restartedMain] Started SpringSecurityMongoApplication in 181.969 seconds (JVM running for 183.788)
+2021-10-10 21:22:13,063 [INFO] org.springframework.boot.availability.ApplicationAvailabilityBean [restartedMain] Application availability state LivenessState changed to CORRECT
+2021-10-10 21:22:13,068 [INFO] org.springframework.boot.availability.ApplicationAvailabilityBean [restartedMain] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-10-10 21:27:10,915 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 21:32:16,423 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 21:37:26,128 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 21:42:37,642 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 21:44:30,246 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8682-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-10 21:44:30,317 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8682-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-10-10 21:44:30,716 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8682-exec-2] Completed initialization in 232 ms
+2021-10-10 21:44:36,693 [ERROR] com.example.demo.AuthController [http-nio-8682-exec-2] PostMapping() method executed
+2021-10-10 21:44:36,693 [ERROR] com.example.demo.AuthController [http-nio-8682-exec-1] PostMapping() method executed
+2021-10-10 21:44:47,830 [INFO] org.mongodb.driver.connection [http-nio-8682-exec-1] Opened connection [connectionId{localValue:7, serverValue:420365}] to cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:44:48,138 [INFO] org.mongodb.driver.connection [http-nio-8682-exec-2] Opened connection [connectionId{localValue:8, serverValue:420365}] to cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:44:48,492 [ERROR] com.example.demo.AuthController [http-nio-8682-exec-3] PostMapping() method executed
+2021-10-10 21:45:03,638 [INFO] org.mongodb.driver.connection [http-nio-8682-exec-3] Opened connection [connectionId{localValue:9, serverValue:420368}] to cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 21:47:38,443 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 21:49:13,978 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = 'boolean com.netflix.servo.monitor.Monitors.isObjectRegistered(java.lang.String, java.lang.Object)' stacktrace = java.lang.NoSuchMethodError: 'boolean com.netflix.servo.monitor.Monitors.isObjectRegistered(java.lang.String, java.lang.Object)'
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.shutdown(RetryableEurekaHttpClient.java:92)
+	at com.netflix.discovery.shared.transport.TransportUtils.shutdown(TransportUtils.java:40)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:70)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+2021-10-10 21:49:26,038 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(31)-127.0.0.1] Application shutdown requested.
+2021-10-10 21:49:26,183 [INFO] org.springframework.boot.availability.ApplicationAvailabilityBean [RMI TCP Connection(31)-127.0.0.1] Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-10-10 21:49:26,389 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(31)-127.0.0.1] Unregistering application ADMIN-SERVICE with eureka with status DOWN
+2021-10-10 21:49:26,463 [INFO] com.netflix.discovery.DiscoveryClient [RMI TCP Connection(31)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1633882766463, current=DOWN, previous=UP]
+2021-10-10 21:49:26,512 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682: registering service...
+2021-10-10 21:49:26,805 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682 - registration status: 204
+2021-10-10 21:49:26,942 [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(31)-127.0.0.1] Stopping service [Tomcat]
+2021-10-10 21:49:27,222 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(31)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-10-10 21:49:28,263 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(31)-127.0.0.1] The web application [ROOT] appears to have started a thread named [Thread-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.net.dns.ResolverConfigurationImpl.notifyAddrChange0(Native Method)
+ java.base@16.0.2/sun.net.dns.ResolverConfigurationImpl$AddressChangeListener.run(ResolverConfigurationImpl.java:176)
+2021-10-10 21:49:28,302 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(31)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@16.0.2/java.net.Socket$SocketInputStream.read(Socket.java:976)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 21:49:28,891 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(31)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:435)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1300(DefaultServerMonitor.java:57)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:409)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 21:49:28,922 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(31)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@16.0.2/java.net.Socket$SocketInputStream.read(Socket.java:976)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 21:49:29,153 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(31)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:435)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1300(DefaultServerMonitor.java:57)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:409)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 21:49:29,232 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(31)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@16.0.2/java.net.Socket$SocketInputStream.read(Socket.java:976)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 21:49:29,287 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(31)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='61630c1d18966a4d465fe92b', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:435)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1300(DefaultServerMonitor.java:57)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:409)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 22:04:10,469 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2021-10-10 22:04:11,045 [INFO] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-10-10 22:04:11,047 [WARN] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/Admin-Service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2021-10-10 22:04:11,075 [INFO] com.example.demo.SpringSecurityMongoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-10 22:04:33,889 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-10-10 22:04:38,828 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4923 ms. Found 1 MongoDB repository interfaces.
+2021-10-10 22:04:41,034 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0ff63cb0-b75c-33a0-bdb5-4e2b7b67e549
+2021-10-10 22:04:42,662 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:42,673 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.data.RepositoryMetricsAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.data.RepositoryMetricsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:42,686 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:42,702 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'management.metrics.export.simple-org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:42,820 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'simpleConfig' of type [org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimplePropertiesConfigAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:42,892 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:42,918 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'micrometerClock' of type [io.micrometer.core.instrument.Clock$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:43,087 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'simpleMeterRegistry' of type [io.micrometer.core.instrument.simple.SimpleMeterRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:43,123 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'repositoryTagsProvider' of type [org.springframework.boot.actuate.metrics.data.DefaultRepositoryTagsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:43,140 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'metricsRepositoryMethodInvocationListener' of type [org.springframework.boot.actuate.metrics.data.MetricsRepositoryMethodInvocationListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-10 22:04:50,195 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8682 (http)
+2021-10-10 22:04:50,440 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-10-10 22:04:50,475 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-10-10 22:04:51,859 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-10-10 22:04:51,864 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 40720 ms
+2021-10-10 22:04:52,560 [INFO] org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.swz5y.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-3vu4pm-shard-0'}
+2021-10-10 22:04:52,712 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-srv-cluster0.swz5y.mongodb.net] Adding discovered server cluster0-shard-00-02.swz5y.mongodb.net:27017 to client view of cluster
+2021-10-10 22:04:53,289 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-srv-cluster0.swz5y.mongodb.net] Adding discovered server cluster0-shard-00-00.swz5y.mongodb.net:27017 to client view of cluster
+2021-10-10 22:04:53,302 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-srv-cluster0.swz5y.mongodb.net] Adding discovered server cluster0-shard-00-01.swz5y.mongodb.net:27017 to client view of cluster
+2021-10-10 22:04:53,781 [WARN] org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-10-10 22:04:54,166 [WARN] org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-10-10 22:04:55,136 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:3, serverValue:368684}] to cluster0-shard-00-00.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,136 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:1, serverValue:420660}] to cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,166 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.swz5y.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1187683800, setName='atlas-3vu4pm-shard-0', canonicalAddress=cluster0-shard-00-00.swz5y.mongodb.net:27017, hosts=[cluster0-shard-00-00.swz5y.mongodb.net:27017, cluster0-shard-00-02.swz5y.mongodb.net:27017, cluster0-shard-00-01.swz5y.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.swz5y.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=9, topologyVersion=TopologyVersion{processId=61560a28931ad8dfbc143c42, counter=4}, lastWriteDate=Sun Oct 10 22:04:47 IST 2021, lastUpdateTimeNanos=207988257939700}
+2021-10-10 22:04:55,136 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:2, serverValue:420660}] to cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,136 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:4, serverValue:368683}] to cluster0-shard-00-00.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,136 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:5, serverValue:367291}] to cluster0-shard-00-01.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,136 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] Opened connection [connectionId{localValue:6, serverValue:367291}] to cluster0-shard-00-01.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,167 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.swz5y.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1195526400, setName='atlas-3vu4pm-shard-0', canonicalAddress=cluster0-shard-00-02.swz5y.mongodb.net:27017, hosts=[cluster0-shard-00-00.swz5y.mongodb.net:27017, cluster0-shard-00-02.swz5y.mongodb.net:27017, cluster0-shard-00-01.swz5y.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.swz5y.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007a, setVersion=9, topologyVersion=TopologyVersion{processId=61560b3b4ec7e0bfd5c83bbb, counter=6}, lastWriteDate=Sun Oct 10 22:04:47 IST 2021, lastUpdateTimeNanos=207988258328300}
+2021-10-10 22:04:55,245 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.swz5y.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1175472000, setName='atlas-3vu4pm-shard-0', canonicalAddress=cluster0-shard-00-01.swz5y.mongodb.net:27017, hosts=[cluster0-shard-00-00.swz5y.mongodb.net:27017, cluster0-shard-00-02.swz5y.mongodb.net:27017, cluster0-shard-00-01.swz5y.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.swz5y.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=9, topologyVersion=TopologyVersion{processId=61560c1c508d65da7ca3b56f, counter=4}, lastWriteDate=Sun Oct 10 22:04:47 IST 2021, lastUpdateTimeNanos=207988257939900}
+2021-10-10 22:04:55,247 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Setting max election id to 7fffffff000000000000007a from replica set primary cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,262 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Setting max set version to 9 from replica set primary cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 22:04:55,266 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] Discovered replica set primary cluster0-shard-00-02.swz5y.mongodb.net:27017
+2021-10-10 22:04:57,141 [DEBUG] com.example.demo.service.JwtFilterReq [restartedMain] Filter 'jwtFilterReq' configured for use
+2021-10-10 22:04:57,454 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2021-10-10 22:05:03,124 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-10-10 22:05:07,111 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@645a985b, org.springframework.security.web.context.SecurityContextPersistenceFilter@278cb4d1, org.springframework.security.web.header.HeaderWriterFilter@64b33962, org.springframework.security.web.authentication.logout.LogoutFilter@567f95a8, com.example.demo.service.JwtFilterReq@5d5cba79, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@247eed47, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@97e3fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3447d218, org.springframework.security.web.session.SessionManagementFilter@7751aec9, org.springframework.security.web.access.ExceptionTranslationFilter@15d2d9b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7985c4b4]
+2021-10-10 22:05:07,166 [INFO] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-10-10 22:05:07,452 [WARN] com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-10 22:05:07,464 [INFO] com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-10 22:05:07,580 [WARN] com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-10-10 22:05:07,595 [INFO] com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-10 22:05:10,535 [INFO] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
+2021-10-10 22:05:10,849 [WARN] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-10-10 22:05:11,514 [INFO] org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2021-10-10 22:05:11,985 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2021-10-10 22:05:12,449 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2021-10-10 22:05:12,451 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2021-10-10 22:05:13,949 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2021-10-10 22:05:13,955 [INFO] com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2021-10-10 22:05:15,746 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2021-10-10 22:05:16,059 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2021-10-10 22:05:16,075 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2021-10-10 22:05:16,092 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2021-10-10 22:05:16,093 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2021-10-10 22:05:16,095 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2021-10-10 22:05:16,106 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2021-10-10 22:05:16,143 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2021-10-10 22:05:16,568 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2021-10-10 22:05:16,681 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2021-10-10 22:05:16,737 [INFO] com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-10 22:05:16,789 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1633883716787 with initial instances count: 3
+2021-10-10 22:05:16,807 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ADMIN-SERVICE with eureka with status UP
+2021-10-10 22:05:16,809 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1633883716809, current=UP, previous=STARTING]
+2021-10-10 22:05:16,813 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682: registering service...
+2021-10-10 22:05:16,868 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682 - registration status: 204
+2021-10-10 22:05:17,034 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8682 (http) with context path ''
+2021-10-10 22:05:17,043 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8682
+2021-10-10 22:05:17,250 [INFO] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2021-10-10 22:05:17,501 [INFO] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2021-10-10 22:05:17,639 [INFO] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2021-10-10 22:05:18,302 [INFO] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2021-10-10 22:05:19,203 [INFO] com.example.demo.SpringSecurityMongoApplication [restartedMain] Started SpringSecurityMongoApplication in 74.847 seconds (JVM running for 78.791)
+2021-10-10 22:05:19,401 [INFO] org.springframework.boot.availability.ApplicationAvailabilityBean [restartedMain] Application availability state LivenessState changed to CORRECT
+2021-10-10 22:05:19,448 [INFO] org.springframework.boot.availability.ApplicationAvailabilityBean [restartedMain] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-10-10 22:10:16,153 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 22:15:16,181 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 22:20:16,250 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2021-10-10 22:23:06,779 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(23)-127.0.0.1] Application shutdown requested.
+2021-10-10 22:23:06,797 [INFO] org.springframework.boot.availability.ApplicationAvailabilityBean [RMI TCP Connection(23)-127.0.0.1] Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-10-10 22:23:06,799 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(23)-127.0.0.1] Unregistering application ADMIN-SERVICE with eureka with status DOWN
+2021-10-10 22:23:06,800 [INFO] com.netflix.discovery.DiscoveryClient [RMI TCP Connection(23)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1633884786800, current=DOWN, previous=UP]
+2021-10-10 22:23:06,954 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682: registering service...
+2021-10-10 22:23:07,113 [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(23)-127.0.0.1] Stopping service [Tomcat]
+2021-10-10 22:23:07,597 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ADMIN-SERVICE/host.docker.internal:Admin-Service:8682 - registration status: 204
+2021-10-10 22:23:07,761 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(23)-127.0.0.1] The web application [ROOT] appears to have started a thread named [Thread-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.net.dns.ResolverConfigurationImpl.notifyAddrChange0(Native Method)
+ java.base@16.0.2/sun.net.dns.ResolverConfigurationImpl$AddressChangeListener.run(ResolverConfigurationImpl.java:176)
+2021-10-10 22:23:07,800 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(23)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@16.0.2/java.net.Socket$SocketInputStream.read(Socket.java:976)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 22:23:07,862 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(23)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-02.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:435)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1300(DefaultServerMonitor.java:57)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:409)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 22:23:07,979 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(23)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@16.0.2/java.net.Socket$SocketInputStream.read(Socket.java:976)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 22:23:08,034 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(23)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-00.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:435)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1300(DefaultServerMonitor.java:57)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:409)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 22:23:08,049 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(23)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@16.0.2/java.net.Socket$SocketInputStream.read(Socket.java:976)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)
+2021-10-10 22:23:08,092 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(23)-127.0.0.1] The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='6163162c3f4acf7687e7fdcb', description='null'}-cluster0-shard-00-01.swz5y.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@16.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@16.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@16.0.2/java.net.Socket$SocketInputStream.read(Socket.java:976)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+ java.base@16.0.2/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+ java.base@16.0.2/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+ app//com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:279)
+ app//com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+ app//com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.pingServer(DefaultServerMonitor.java:427)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:401)
+ java.base@16.0.2/java.lang.Thread.run(Thread.java:831)

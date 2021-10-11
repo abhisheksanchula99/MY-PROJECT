@@ -29,7 +29,7 @@ export class PnrService {
 
   getorders()
   {
-    return this.httpClient.get<Seats[]>('http://localhost:8081/orders') 
+    return this.httpClient.get<Seats[]>('book/orders') 
    }
 
   

@@ -27,7 +27,17 @@ export class UpdatetrainsComponent implements OnInit {
    // console.warn(this.router.snapshot.params.id)
     this.httpClientService.getCurrentResto(this.router.snapshot.params.id).subscribe((result: any)=>{
    console.warn("result",result)
+   this.editResto.patchValue({
+    train_id: result.train_id,
+    train_name: result.train_name,
+    from:result.from,
+    to:result.to,
+    fare: result.fare,
+    berths: result.berths
+
+   })
   }
+
   
   )
   }
